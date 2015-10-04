@@ -99,14 +99,11 @@ class Player: public Board {
 public:
 	int piecesGained;
 	int x1, y1, x2, y2;
-	//int bx, by;
 	Player(int z);
 	bool updateBoard1(int d1, int d2);
 	bool updateBoard2(int d1, int d2);
 	int updateBoard3();
 	int updateBoard4();
-	//int checkKingJump1();
-	//int checkKingJump2();
 
 };
 
@@ -115,8 +112,6 @@ Player::Player(int z) {
 	x2 = z;
 	y1 = z;
 	y2 = z;
-	//bx = z;
-	//by = z;
 	piecesGained = z;
 }
 
@@ -278,9 +273,6 @@ bool Player::updateBoard2(int d1, int d2) {
 
 int Player::updateBoard3(void) {
 
-	//bx = x1;
-	//by = y1;
-
 	int pG = 0;
 
 	while (x1 != x2) {
@@ -313,9 +305,6 @@ int Player::updateBoard3(void) {
 }
 
 int Player::updateBoard4(void) {
-
-	//bx = x1;
-	//by = y1;
 
 	int pG = 0;
 
